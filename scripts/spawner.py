@@ -11,7 +11,7 @@ def spawn_enemy(game, player_pos, radius):
 
     spawn_point = (player_pos[0] + radius * math.cos(angle_radians), player_pos[1] + radius * math.sin(angle_radians))
 
-    if game.score > 1:
-        return EnemyShooter(game, spawn_point)
+    #if game.score > 1:
+        #return EnemyShooter(game, spawn_point) --ceci est pour montrer un exemple à la toute fin du tuto
     
     return Enemy(game, spawn_point)
